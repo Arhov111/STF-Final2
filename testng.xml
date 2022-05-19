@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+    <test name="goToRegisterNowPageTest">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="HomePageTests">
+                    <methods>
+                        <include name="goToRegisterNowPageTest"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="checkIfGelToAed">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="CheckCurrencyChangeTest">
+                    <methods>
+                        <include name="checkIfGelToAed"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="checkCashFromCurrencyCalculator">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="CheckInCashTest">
+                    <methods>
+                        <include name="checkCashFromCurrencyCalculator"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+    <test name="checkNonCashFromCurrencyCalculator">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="CheckNonCashTest">
+                    <methods>
+                        <include name="checkNonCashFromCurrencyCalculator"/>
+                    </methods>
+                </class>
+            </classes>
+        </parameter>
+    </test>
+
+
+
+</suite>
