@@ -7,6 +7,12 @@
                 <class name="HomePageTests">
                     <methods>
                         <include name="goToRegisterNowPageTest"/>
+                        <include name="emailInputIsValidTest"/>
+                        <include name="emailInputIsInvalidTest"/>
+                        <include name="passwordInputIsValidTest"/>
+                        <include name="passwordInputIsInValidTest"/>
+                        <include name="repeatPasswordInputIsValidTest"/>
+                        <include name="repeatPasswordInputIsInValidTest"/>
                     </methods>
                 </class>
             </classes>
