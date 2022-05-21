@@ -10,6 +10,7 @@ public class RegisterPage extends BasePage{
     private By registerNowButton = By.xpath(RegisterPageConstants.registerNowButton);
 
 
+
     @Override
     public String getUrl() {
         return baseURL + "/am/log-in";
@@ -21,4 +22,5 @@ public class RegisterPage extends BasePage{
     public void clickRegisterNow() {
         click(registerNowButton);
     }
+
 }
